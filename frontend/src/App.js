@@ -42,13 +42,14 @@ function App() {
         formData.append('summary_type', summaryType);
         formData.append('sentence_count', sentenceCount);
 
-        response = await axios.post('http://127.0.0.1:8000/summarize-file', formData, {
+        response = await axios.post('/api/summarize-file', formData, {
           headers: { 'Content-Type': 'multipart/form-data' },
         });
 
+
       } else {
         // --- Original Text Logic ---
-        response = await axios.post('http://127.0.0.1:8000/summarize', {
+        response = await axios.post('/api/summarize', {
           text: inputText,
           type: summaryType,
           sentence_count: sentenceCount,
