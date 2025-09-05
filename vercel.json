@@ -3,7 +3,10 @@
     "builds": [
         {
             "src": "backend/main.py",
-            "use": "@vercel/python"
+            "use": "@vercel/python",
+            "config": {
+                "build": "python backend/download_nltk.py"
+            }
         },
         {
             "src": "frontend/package.json",
