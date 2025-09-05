@@ -1,0 +1,272 @@
+/* In SmartSummarizer/frontend/src/App.css */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f9;
+  color: #333;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.App-header p {
+  color: #7f8c8d;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.input-section,
+.output-section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  line-height: 1.6;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.output-section h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.summary-content p {
+  line-height: 1.7;
+  white-space: pre-wrap;
+  /* Preserves line breaks and spacing */
+}
+
+.loading,
+.error {
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+.error {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Add these styles to the bottom of SmartSummarizer/frontend/src/App.css */
+
+.word-limit-notice {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.sentence-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sentence-control label {
+  font-size: 1rem;
+  color: #333;
+}
+
+.sentence-control input {
+  width: 60px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.summary-header h2 {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.copy-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copy-button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border: 1px solid #bdc3c7;
+  font-weight: normal;
+}
+
+.copy-button:hover:not(:disabled) {
+  background-color: #dfe6e9;
+}
+
+.copy-success {
+  font-size: 0.9rem;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+
+/* Add these styles to the bottom of SmartSummarizer/frontend/src/App.css */
+
+.file-upload-container {
+  margin-top: 15px;
+  text-align: left;
+  margin-bottom: 20px;
+  /* <-- ADD THIS LINE to create space below the button */
+}
+
+.file-upload-container input[type="file"] {
+  display: none;
+  /* Hide the default input */
+}
+
+.file-upload-label {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-upload-label:hover {
+  background-color: #2980b9;
+}
+
+.file-name {
+  margin-left: 15px;
+  font-style: italic;
+  color: #333;
+}
+
+/* In SmartSummarizer/frontend/src/App.css */
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.summary-header h2 {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.copy-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copy-button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border: 1px solid #bdc3c7;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.copy-button:hover:not(:disabled) {
+  background-color: #dfe6e9;
+}
+
+.copy-success {
+  font-size: 0.9rem;
+  color: #27ae60;
+  font-weight: bold;
+}
