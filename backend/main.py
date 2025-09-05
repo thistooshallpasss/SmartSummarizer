@@ -30,11 +30,11 @@ app.add_middleware(
 )
 
 # --- API Endpoints ---
-@app.get("/")
+@app.get("/api") # <--- CHANGE THIS
 def read_root():
     return {"status": "API is running"}
 
-@app.post("/summarize", response_model=SummarizeResponse)
+@app.post("/api/summarize", response_model=SummarizeResponse) # <--- CHANGE THIS
 def create_summary(request: SummarizeRequest):
     """
     Accepts text and a summary type, returns the generated summary.
@@ -47,7 +47,7 @@ def create_summary(request: SummarizeRequest):
     )
     return SummarizeResponse(summary=summary)
 
-@app.post("/summarize-file", response_model=SummarizeResponse)
+@app.post("/api/summarize-file", response_model=SummarizeResponse) # <--- CHANGE THIS
 async def create_summary_from_file(
     summary_type: str = Form(...),
     sentence_count: int = Form(3),

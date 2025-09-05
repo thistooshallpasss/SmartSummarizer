@@ -8,8 +8,9 @@ An intelligent full-stack web application that leverages Natural Language Proces
 
 ---
 
-![Project Screenshot](https://i.imgur.com/kS5A4iW.png)
-*(**Action Required:** Replace the image link above with a screenshot of your own running application. To do this, take a screenshot, add it to a folder in your project (e.g., `docs/screenshot.png`), and update the path here: `![Project Screenshot](docs/screenshot.png)`)*
+![Project Screenshot](frontend/data/a.png)
+![Project Screenshot2](frontend/data/b.png)
+![Project Screenshot3](frontend/data/c.png)
 
 ## 📝 About The Project
 
@@ -56,8 +57,8 @@ Make sure you have the following installed on your machine:
 
 1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    cd your-repo-name
+    git clone [https://github.com/thistooshallpasss/SmartSummarizer](https://github.com/thistooshallpasss/SmartSummarizer)
+    cd SmartSummarizer
     ```
 
 2.  **Setup the Python Backend:**
