@@ -122,8 +122,6 @@ button:disabled {
   font-weight: bold;
 }
 
-/* Add these styles to the bottom of SmartSummarizer/frontend/src/App.css */
-
 .word-limit-notice {
   font-size: 0.85rem;
   color: #7f8c8d;
